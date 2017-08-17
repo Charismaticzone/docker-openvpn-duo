@@ -49,7 +49,7 @@ a corresponding [Digital Ocean Community Tutorial](http://bit.ly/1AGUZkq).
 
         docker run -v $OVPN_DATA:/etc/openvpn -p 1194:1194/udp --privileged -e DEBUG=1 kylemanna/openvpn
 
-* Test using a client that has openvpn installed correctly 
+* Test using a client that has openvpn installed correctly
 
         $ openvpn --config CLIENTNAME.ovpn
 
@@ -85,7 +85,7 @@ Conveniently, `kylemanna/openvpn` comes with a script called `ovpn_getclient`,
 which dumps an inline OpenVPN client configuration file.  This single file can
 then be given to a client for access to the VPN.
 
-To enable Two Factor Authentication for clients (a.k.a. OTP) see [this document](/docs/otp.md).
+To enable Duo 2FA for clients see [this document](/docs/duo.md).
 
 ## OpenVPN Details
 
@@ -178,7 +178,7 @@ of a guarantee in the future.
      * OpenVPN core 3.0 android armv7a thumb2 32-bit
   * OS X Mavericks with Tunnelblick 3.4beta26 (build 3828) using openvpn-2.3.4
   * ArchLinux OpenVPN pkg 2.3.4-1
-  * 
+  *
 
 ## Having permissions issues with Selinux enabled?
 

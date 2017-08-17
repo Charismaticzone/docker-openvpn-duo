@@ -2,15 +2,14 @@
 set -e
 
 testAlias+=(
-	[kylemanna/openvpn]='openvpn'
+  [kylemanna/openvpn]='openvpn'
 )
 
 imageTests+=(
-	[openvpn]='
-		paranoid
+  [openvpn]='
+    paranoid
         conf_options
         basic
         dual-proto
-        otp
-	'
+  '
 )
